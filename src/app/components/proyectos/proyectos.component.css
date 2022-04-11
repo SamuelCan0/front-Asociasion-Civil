@@ -1,0 +1,89 @@
+section{
+  padding: 2rem 7%;
+}
+
+.cuerpo{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background: none;
+  border-radius: 9px;
+  cursor: pointer;
+  padding-top: 0;
+  color: white;
+  padding-bottom: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.card{
+  background-color: var(--black);
+}
+
+.collapse{
+  color: #ccc;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.collapse h4{
+  font-size: 20px;
+}
+
+.collapse .descrip{
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.imagen{
+  height: 320px;
+  object-fit: scale-down;
+}
+
+.headings{
+  text-align: center;
+  color: #9cb1c4;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.headings::after{
+  content: "";
+  height: 4px;
+  width: 250px;
+  background-color:var(--main-color);
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.headings span{
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.espacio{
+  padding-bottom: 15px;
+}

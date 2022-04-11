@@ -1,0 +1,89 @@
+section{
+  padding: 2rem 7%;
+}
+
+.headings{
+  text-align: center;
+  color: #9cb1c4;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.headings::after{
+  content: "";
+  height: 4px;
+  width: 250px;
+  background-color:var(--main-color);
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+
+
+.headings span{
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.foto{
+  height: 250px;
+  object-fit: scale-down;
+}
+
+.galery .imagenes .pie{
+  width: 100%;
+  text-align: center;
+}
+
+.galery .imagenes .pie button{
+  margin-top: 10px;
+  width: 75%;
+  border-radius: 9px;
+}
+
+.titulos{
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.descrip{
+  color: black;
+  font-size:.9375rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.likes{
+  max-width: 100%;
+}
+
+.likes i{
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+
+.titulos{
+  color: #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.descrip{
+  color: #ccc;
+  font-size:.9375rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.fondo{
+  background: #657f97;
+  color: #ccc;
+  border-radius: 9px;
+}

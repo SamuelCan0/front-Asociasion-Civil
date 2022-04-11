@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headers{
+  background-color: var(--bg);
+  width: 100%;
+  border-bottom:1px solid var(--verde);
+}
+
+.click{
+  padding: 8px 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.click:hover{
+  background-color: var(--main-color);
+  width: max-content;
+  transition: .5s;
+}
+
+.menu{
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.centro{
+  font-size: 18px;
+}
+
+
+
+@media(max-width:992px){
+  .centro{
+    align-items: center;
+  }
+}
+

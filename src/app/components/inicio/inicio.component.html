@@ -1,0 +1,44 @@
+<section class="home" id="home">
+  <div class="contents">
+    <h3>Titulo</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia molestias, quam nisi veritatis quidem enim minus adipisci perferendis, omnis iure amet at nostrum sed repellat esse atque hic aperiam in.</p>
+  </div>
+</section>
+<hr>
+<section class="about" id="about">
+  <h1 class="headings"><span>Sobre</span> Nosotros</h1>
+  <div class="rows">
+    <div class="image">
+      <img src="./assets/img/proyec1.jpg" alt="">
+    </div>
+    <div class="contents">
+      <h3>Proyectos Realizados</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste esse aspernatur itaque, eum, tempora, impedit labore nisi doloremque ad nam? Ab ipsum dolores voluptatum magni obcaecati vel quod voluptas.</p>
+      <button type="button" class="btn btn-outline-light" routerLink="/proyectos">Saber Mas</button>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="galery">
+  <h1 class="headings"><span>Nuestra</span> Galeria</h1>
+  <div class="imagenes">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let g of gallerys ; let i=index">
+        <div class="card fondo" *ngIf="i<3">
+          <div class="card-header">
+            <h4 class="titulos">{{g.titulo}}</h4>
+          </div>
+          <img src="{{g.imagen}}" class="card-img-top foto" alt="...">
+          <div class="card-footer likes">
+            <p class="descrip">{{g.descrip}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pie">
+      <button type="button" routerLink="/galeria" class="btn btn-outline-light btn-sm">
+        Ver Mas
+      </button>
+    </div>
+  </div>
+</section>

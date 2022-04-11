@@ -1,0 +1,20 @@
+<section class="galery">
+  <h1 class="headings"><span>Nuestra</span> Galeria</h1>
+  <div class="imagenes">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let g of gallerys ; let i=index">
+        <div class="card fondo">
+          <div class="card-header">
+            <h4 class="titulos">{{g.titulo}}</h4>
+          </div>
+          <a href="{{g.imagen}}" target="_blank">
+            <img src="{{g.imagen}}" class="card-img-top foto" alt="...">
+          </a>
+          <div class="card-footer likes">
+            <p class="descrip">{{g.descrip}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

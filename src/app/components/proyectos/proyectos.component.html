@@ -1,0 +1,22 @@
+<section>
+  <h1 class="headings"><span>Proyectos</span> realizados</h1>
+  <div class="row ">
+    <div class="col-sm-6 espacio" *ngFor="let p of projects;let i=index">
+      <div class="card">
+        <img src="{{p.image}}" class="card-img-top imagen">
+        <div class="card-footer">
+          <a type="button" class="collapsible" data-bs-toggle="collapse" href="#id-{{ i }}" >
+            <i class="icon ion-md-arrow-dropdown"></i>
+          </a>
+          <div class="collapse" id="id-{{ i }}">
+            <h4>{{p.titulo}}</h4>
+            <div class="descrip">
+              {{p.descrip}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
